@@ -33,8 +33,9 @@ The launcher is designed to be used as follows:
 2. Create [YourApp].ini (in the same directory)
 3. Customize [YourApp].ini (see the table below for information)
 4. Create [YourApp].ico (in the same directory)
-5. Run <code>RCEDIT.exe /I [YourApp].exe [YourApp].ico</code> (this will inject your icon into the executable).
-6. Launch [YourApp].exe
+5. Run <code>RCEDIT.exe /C [YourApp].exe  （先清空ico图标，然后下面的 /I 设置ico才能生效）
+6. Run <code>RCEDIT.exe /I [YourApp].exe [YourApp].ico</code> (this will inject your icon into the executable).
+7. Launch [YourApp].exe
 
 A very basic INI file would look like:
 
